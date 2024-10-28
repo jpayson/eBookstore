@@ -13,7 +13,7 @@ drop table if exists books;
 create table books (id int, Title varchar(100), Author varchar(50), Qty int, PRIMARY KEY (id));
 ```
 
-Then in eBookstore.java, simply replace "myuser" and "XXXX" with your username and password on line 466
+Then in eBookstore.java, replace "myuser" and "XXXX" with your username and password on line 466
 ```
 Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ebookstore?allowPublicKeyRetrieval=true&useSSL=false" , "myuser" , "XXXX" );
 ```
